@@ -1,0 +1,50 @@
+$cobaltBlue: #0047ab;
+$mediaMobile: 550px;
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center-undrcon {
+        position: absolute;
+        text-align: center;
+        font-family: sans-serif;
+        background: rgba(white, 0.8);
+        border: 3px solid $cobaltBlue;
+        padding: 15px 30px;
+        border-radius: 18px;
+
+        @media screen and (max-width: $mediaMobile) {
+            padding: 1%;
+            border: 1px solid $cobaltBlue;
+        }
+
+        h1, h4 {
+            margin: 0;
+            color: $cobaltBlue;
+
+            @media screen and (max-width: $mediaMobile) {
+               font-weight: lighter;
+            }
+        }
+        
+        h1 {
+            font-size: 8rem;
+
+            @media screen and (max-width: $mediaMobile) {
+                font-Size: 3rem;
+                font-weight: bolder;
+            }
+        }
+
+        h4 {
+            font-size: 4rem;
+            font-weight: lighter;
+
+            @media screen and (max-width: $mediaMobile) {
+                font-Size: 2rem;
+            }
+        }
+    }
+}
