@@ -1,48 +1,74 @@
-.center {
+.container {
+  border: 1px dashed red;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../images/undraw_under_construction_46pa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.center .center-undrcon {
-  position: absolute;
-  text-align: center;
-  font-family: sans-serif;
-  background: rgba(255, 255, 255, 0.8);
-  border: 3px solid #0047ab;
-  padding: 15px 30px;
-  border-radius: 18px;
+.container .top-bar {
+  border: 1px solid green;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
 }
-@media screen and (max-width: 550px) {
-  .center .center-undrcon {
-    padding: 1%;
-    border: 1px solid #0047ab;
+@media all and (max-width: 960px) {
+  .container .top-bar {
+    position: absolute;
   }
 }
-.center .center-undrcon h1, .center .center-undrcon h4 {
+.container .top-bar .subtitle {
   margin: 0;
   color: #0047ab;
+  border: 3px solid #0047ab;
+  display: inline-block;
+  padding: 0.5%;
+  margin: 1%;
+  border-radius: 19px;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
-@media screen and (max-width: 550px) {
-  .center .center-undrcon h1, .center .center-undrcon h4 {
-    font-weight: lighter;
+@media all and (max-width: 960px) {
+  .container .top-bar .subtitle {
+    border: 2px solid #0047ab;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
   }
 }
-.center .center-undrcon h1 {
-  font-size: 8rem;
+.container .title {
+  border: 15px solid black;
+  border-radius: 25px;
+  text-align: center;
+  color: black;
+  background: rgba(255, 165, 0, 0.7);
+  padding: 1.5%;
+  line-height: 10rem;
+  filter: drop-shadow(20px 20px 15px);
+  font-family: sans-serif;
+  font-size: 6rem;
 }
-@media screen and (max-width: 550px) {
-  .center .center-undrcon h1 {
-    font-Size: 3rem;
-    font-weight: bolder;
+@media all and (max-width: 960px) {
+  .container .title {
+    font-size: 3rem !important;
+    border: 10px solid black;
+    border-radius: 25px;
+    line-height: 5.5rem;
+    padding: 0 2%;
+    filter: drop-shadow(15px 15px 10px);
   }
 }
-.center .center-undrcon h4 {
-  font-size: 4rem;
-  font-weight: lighter;
-}
-@media screen and (max-width: 550px) {
-  .center .center-undrcon h4 {
-    font-Size: 2rem;
+@media all and (max-width: 550px) {
+  .container .title {
+    font-size: 2rem !important;
+    line-height: 4rem;
+    border: 5px solid black;
   }
 }
 

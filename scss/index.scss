@@ -1,50 +1,85 @@
 $cobaltBlue: #0047ab;
-$mediaMobile: 550px;
+$mobile: 550px;
+$tablet: 960px;
 
-.center {
+.container {
+    border: 1px dashed red;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: {
+        image: url("../images/undraw_under_construction_46pa.png");
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
 
-    .center-undrcon {
-        position: absolute;
-        text-align: center;
-        font-family: sans-serif;
-        background: rgba(white, 0.8);
-        border: 3px solid $cobaltBlue;
-        padding: 15px 30px;
-        border-radius: 18px;
+    .top-bar {
+        border: 1px solid green;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
 
-        @media screen and (max-width: $mediaMobile) {
-            padding: 1%;
-            border: 1px solid $cobaltBlue;
+        @media all and (max-width: $tablet) {
+            position: absolute;
         }
 
-        h1, h4 {
+        .subtitle {
             margin: 0;
             color: $cobaltBlue;
+            border: 3px solid $cobaltBlue;
+            display: inline-block;
+            padding: .5%;
+            margin: 1%;
+            border-radius: 19px;
+            font: {
+                family: sans-serif;
+                size: 2.5rem;
+                weight: 300;
+            }
 
-            @media screen and (max-width: $mediaMobile) {
-               font-weight: lighter;
+            @media all and (max-width: $tablet) {
+                border: 2px solid $cobaltBlue;
+                border-radius: 10px;
+                // margin: 0;
+                font: {
+                    family: sans-serif;
+                    size: 1.8rem;
+                    weight: 300;
+                }
             }
         }
-        
-        h1 {
-            font-size: 8rem;
+    }
 
-            @media screen and (max-width: $mediaMobile) {
-                font-Size: 3rem;
-                font-weight: bolder;
-            }
+    .title {
+        border: 15px solid black;
+        border-radius: 25px;
+        text-align: center;
+        color: rgba(black, 1);
+        background: rgba(orange, 0.7);
+        padding: 1.5%;
+        line-height: 10rem;
+        filter: drop-shadow(20px 20px 15px);
+        font: {
+            family: sans-serif;
+            size: 6rem;
         }
 
-        h4 {
-            font-size: 4rem;
-            font-weight: lighter;
+        @media all and (max-width: $tablet) {
+            font-size: 3rem !important;
+            border: 10px solid black;
+            border-radius: 25px;
+            line-height: 5.5rem;
+            padding: 0 2%;
+            filter: drop-shadow(15px 15px 10px);
+        }
 
-            @media screen and (max-width: $mediaMobile) {
-                font-Size: 2rem;
-            }
+        @media all and (max-width: $mobile) {
+            font-size: 2rem !important;
+            line-height: 4rem;
+            border: 5px solid black;
         }
     }
 }
