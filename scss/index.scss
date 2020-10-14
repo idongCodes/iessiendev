@@ -3,7 +3,7 @@ $mobile: 550px;
 $tablet: 960px;
 
 .container {
-    border: 1px dashed red;
+    // border: 1px dashed red;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ $tablet: 960px;
     }
 
     .top-bar {
-        border: 1px solid green;
+        // border: 1px solid green;
         width: 100%;
         position: fixed;
         z-index: 2;
