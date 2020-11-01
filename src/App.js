@@ -1,9 +1,11 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import TopBar from "./topBar.js";
 
 function App() {
   return (
     <div className="App">
+      <TopBar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
