@@ -1,9 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 480px) {
+  .App {
+    min-width: 275px;
+    margin: auto;
+    height: 100vh;
+    background-image: url("../logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 .top-bar {
-  position: fixed;
+  background: #0047ab;
+  padding: 1.5%;
   color: white;
-  background: black;
-  width: 98.1%;
-  padding: 0.5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.top-bar h1 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.main-container {
+  background: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .construction {
+  margin: 0 auto;
+  text-align: left;
+  width: 90%;
+  font-size: 1.3rem;
+}
+.main-container p {
+  border: solid green 1px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  padding: 2%;
+  text-align: center;
+  color: #0047ab;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=index.css.map */

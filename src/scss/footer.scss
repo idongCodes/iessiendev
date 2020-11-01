@@ -1,0 +1,12 @@
+.footer {
+    position:absolute;
+    width:100%;
+    z-index:99;
+    padding:2%;
+    text-align:center;
+    color:$cobaltBlue;
+    font: {
+        size:.8rem;
+        weight:bold;
+    }
+}
