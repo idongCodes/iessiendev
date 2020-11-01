@@ -1,0 +1,13 @@
+@media all and (max-width:$mobile) {
+    .App {
+        min-width: 275px;
+        margin:auto;
+        height:100vh;
+        background: {
+            image:url("../logo.png");
+            size:cover;
+            position:center;
+            repeat:no-repeat;
+        }
+    }
+}

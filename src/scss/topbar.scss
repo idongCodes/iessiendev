@@ -1,0 +1,17 @@
+.top-bar {
+    background:$cobaltBlue;
+    padding:1.5%;
+    color:white;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:99;
+
+    h1 {
+        font: {
+            size: .8rem;
+            weight:bold;
+            family:sans-serif;
+        }
+    }
+}
