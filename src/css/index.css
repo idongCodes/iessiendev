@@ -97,9 +97,6 @@ table {
   width: 90%;
   font-size: 1.3rem;
 }
-.main-container p {
-  border: solid green 1px;
-}
 
 .footer {
   position: absolute;
