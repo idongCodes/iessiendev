@@ -1,18 +1,16 @@
 .main-container {
     background: rgba(white, .9);
     height:100vh;
-    text-align:center;
     display:flex;
-    flex-direction:column;
     align-items: center;
     justify-content: center;
 
-    .construction {
-        margin:0 auto;
-        text-align: left;
-        width:90%;
-        font: {
-            size: 1.3rem;
+    .construction-txt {
+        text-align:left;
+        font-size:1.5rem;
+
+        p {
+            line-height:1.8rem;
         }
     }
 }
