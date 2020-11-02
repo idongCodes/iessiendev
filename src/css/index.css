@@ -75,9 +75,16 @@ table {
   top: 0;
   width: 100%;
   z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .top-bar a img {
   width: 50px;
+}
+.top-bar ion-icon {
+  color: white;
+  font-size: 1.7rem;
 }
 
 .main-container {
