@@ -1,5 +1,5 @@
 .top-bar {
-    background:$cobaltBlue;
+    background: rgba(white, 1);
     padding:.5% 1.5%;
     color:white;
     position:fixed;
@@ -17,7 +17,7 @@
     }
 
     ion-icon {
-        color:white;
+        color:$cobaltBlue;
         font-size:1.7rem;
     }
 }
