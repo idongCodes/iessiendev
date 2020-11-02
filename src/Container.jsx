@@ -1,9 +1,11 @@
 export default function Container() {
-    return(
-        <div className="main-container">
-            <p className="construction">Hello 👋</p>
-            <p className="construction">🚧 Please, excuse the look</p>
-            <p className="construction">I am under construction 👷</p>
-        </div>
-    );
+  return (
+    <div className="main-container">
+      <div className="construction-txt">
+        <p>Hello 👋</p>
+        <p>🚧 Please, excuse the look</p>
+        <p>I am under construction 👷</p>
+      </div>
+    </div>
+  );
 }
