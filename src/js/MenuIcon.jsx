@@ -14,6 +14,19 @@ const ionIcon = {
 const MenuIcon = () => {
   function toggleMenu() {
     const nav = document.querySelector("nav");
+    const doc = document;
+    let liArr = document.querySelectorAll("li");
+
+    doc.addEventListener("dblclick", () => {
+        nav.style.display = "none";
+      })
+    
+    for (let li of liArr) {
+        li.addEventListener("click", () => {
+            nav.style.display = "none";
+        })
+    }
+
     if (nav.style.display === "block") {
       nav.style.display = "none";
     } else {
