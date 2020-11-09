@@ -97,4 +97,33 @@ table {
   border-bottom: 1px solid #0047ab;
 }
 
+nav {
+  height: 45vh;
+  position: absolute;
+  z-index: 98;
+  right: 25px;
+  background: white;
+  width: 240px;
+  border-radius: 18px;
+  filter: drop-shadow(black 5px 5px 9px);
+  display: none;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav ul * {
+  margin: 10px 0;
+  color: #0047ab;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+nav ul *:hover {
+  color: skyblue;
+}
+
 /*# sourceMappingURL=index.css.map */
