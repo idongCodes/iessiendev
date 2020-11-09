@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import MenuIcon from './MenuIcon';
 
 const Topbar = styled.div`
   background: rgba(white, 1);
@@ -30,7 +31,7 @@ export default function TopBar() {
   return (
     <Topbar>
       <Logo href="">i.E.</Logo>
-      <ion-icon name="menu-sharp"></ion-icon>
+      <MenuIcon />
     </Topbar>
   );
 }
