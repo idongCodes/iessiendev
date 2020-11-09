@@ -21,9 +21,11 @@ const MenuIcon = () => {
         nav.style.display = "none";
       })
     
-    liArr = [...liArr].forEach(li => li.addEventListener("click", () => {nav.style.display = "none";}))
-
-    liArr();
+    for (let li of liArr) {
+        li.addEventListener("click", () => {
+            nav.style.display = "none";
+        })
+    }
 
     if (nav.style.display === "block") {
       nav.style.display = "none";
