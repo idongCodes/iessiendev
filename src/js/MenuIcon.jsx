@@ -16,9 +16,9 @@ const ionIcon = {
 }
 
 const toggleMenu = () => {
-   if (nav.style.display === "block") {
+   if (nav.style.display == "block") {
     nav.style.display = "none";
-   } else {
+   } else if (nav.style.display == "none"){
        nav.style.display = "block";
     }
 
