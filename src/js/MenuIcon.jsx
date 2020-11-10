@@ -2,13 +2,14 @@ import MainNav from "./MainNav";
 
 const menuContainer = {
   position: "absolute",
-  top: "0",
-  right: "0",
+  top: "5px",
+  right: "10px",
 };
 
 const ionIcon = {
   position: "relative",
   zIndex: "99",
+  color:"#0047ab",
 };
 
 const MenuIcon = () => {
