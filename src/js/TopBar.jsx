@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import MenuIcon from './MenuIcon';
+import { Link } from 'react-router-dom';
 
 const Topbar = styled.div`
-  background: rgba(white, 1);
-  padding: 0.5% 1.5%;
-  color: white;
+  background:rgb(255,255,255);
+  padding:10px;
+  color: $cobaltBlue;
   position: fixed;
   top: 0;
   width: 100%;
@@ -21,16 +22,22 @@ const Topbar = styled.div`
 
 const Logo = styled.a`
 font-family: 'Fredericka the Great', cursive;
-color:white;
+color:#0047ab;
 text-decoration:none;
 font-weight:700;
 font-size:1.7rem;
 `
 
+const logoLink = {
+  'text-decoration':'none',
+}
+
 export default function TopBar() {
   return (
     <Topbar>
-      <Logo href="">i.E.</Logo>
+      <Link style={logoLink} to="/">
+        <Logo href="">i.E.</Logo>
+      </Link>
       <MenuIcon />
     </Topbar>
   );

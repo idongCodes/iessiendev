@@ -17,12 +17,11 @@ nav {
     justify-content:center;
     
     * {
-      margin: 10px 0;
+      // margin: 10px 0;
       color: $cobaltBlue;
       font: {
         family: "Oswald";
         weight: 400;
-        size: 2.8rem;
       }
 
       &:hover {
