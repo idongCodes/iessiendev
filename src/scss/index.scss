@@ -27,7 +27,6 @@ $profileImg: '../assets/me.jpeg';
 
 // App
 .app-container {
-    border: 1px dashed red;
     height: 2000px;
 }
 
@@ -41,7 +40,7 @@ $profileImg: '../assets/me.jpeg';
     padding: 25px 45px 0 15px;
     position: fixed;
     top: 0;
-    // left: -500px;
+    left: -500px;
     z-index: 97;
     transition-duration: .6s;
 
