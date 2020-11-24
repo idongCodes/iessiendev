@@ -2,14 +2,12 @@
 import '../css/index.css'
 import { TopBar } from './TopBar';
 import { MainContent } from './MainContent';
-import { Footer } from './Footer';
 
 function App() {
   return (
     <div className='app-container'>
       <TopBar />
       <MainContent />
-      <Footer />
      
       {/* <Switch>
         <Route path="/about">

@@ -1,7 +1,9 @@
+import { MenuIcon } from './MenuIcon';
+
 function TopBar() {
     return(
         <div className='topbar'>
-            Top Bar
+            <MenuIcon />
         </div>
     );
 }

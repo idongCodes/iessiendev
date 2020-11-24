@@ -1,12 +1,6 @@
 function SideBar() {
     return(
         <div className='sidebar-container'>
-            <div className='menu-container'>
-                <div className='menu-top'></div>
-                <div className='menu-mid'></div>
-                <div className='menu-bottom'></div>
-            </div>
-
             <h1 className='titles name-ttl'>Hi 👋,<br/>I'm Idong!</h1>
             <h4 className='titles position-ttl'>Full-Stack Sofware Engineer</h4>
 
@@ -19,7 +13,7 @@ function SideBar() {
             </p>
 
             <div className='skills'>
-                <h3>Tech Stack:</h3>
+                <h3>Currently Frequenting:</h3>
 
                 <div className="skills-icons">
                     <ion-icon name="logo-html5"></ion-icon>
