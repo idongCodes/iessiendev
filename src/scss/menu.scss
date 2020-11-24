@@ -1,0 +1,42 @@
+.menu-container {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    @include displayFlex;
+
+    &:hover .menu-top {
+        transform: scaleX(1.7);
+        transition: transform .3s;
+    }
+
+    &:hover .menu-mid {
+        transform: scaleX(.5);
+        transition: transform .3s;
+    }
+
+    &:hover .menu-bottom {
+        transform: scaleX(1.7);
+        transition: transform .3s;
+    }
+
+    div {
+        height: 10%;
+        background: $cobaltBlue;
+        margin: 3px 0;
+        transition: transform .3s;
+    }
+
+    .menu-top {
+        width: 40%;
+    }
+
+    .menu-mid {
+        width: 80%;
+    }
+
+    .menu-bottom {
+        width: 40%;
+    }
+}
