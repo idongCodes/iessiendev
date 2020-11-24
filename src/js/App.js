@@ -1,9 +1,15 @@
-import { Switch, Route } from 'react-router-dom';
-import { AppContainer, } from './styledcomponents';
+// import { Switch, Route } from 'react-router-dom';
+import '../css/index.css'
+import { TopBar } from './TopBar';
+import { MainContent } from './MainContent';
+import { Footer } from './Footer';
 
 function App() {
   return (
-    <AppContainer>
+    <div className='app-container'>
+      <TopBar />
+      <MainContent />
+      <Footer />
      
       {/* <Switch>
         <Route path="/about">
@@ -22,7 +28,7 @@ function App() {
         <Container />
         </Route>
       </Switch> */}
-    </AppContainer>
+    </div>
   );
 }
 
