@@ -6,6 +6,10 @@
     top: 10px;
     @include displayFlex;
 
+    &:hover div.menu-line {
+        background: lighten($cobaltBlue, 25%);
+    }
+
     &:hover .menu-top {
         transform: scaleX(1.7);
         transition: transform .3s;
