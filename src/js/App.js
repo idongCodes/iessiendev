@@ -1,7 +1,8 @@
-// import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import '../css/index.css'
 import { TopBar } from './TopBar';
 import { MainContent } from './MainContent';
+import { About, Portfolio, Resume, Contact } from './pages';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <TopBar />
       <MainContent />
      
-      {/* <Switch>
+      <Switch>
         <Route path="/about">
           <About />
         </Route>
@@ -23,9 +24,9 @@ function App() {
           <Contact />
         </Route>
         <Route path="/">
-        <Container />
+          <MainContent />
         </Route>
-      </Switch> */}
+      </Switch>
     </div>
   );
 }

@@ -162,6 +162,9 @@ body, html {
   align-items: center;
   justify-content: center;
 }
+.menu-container:hover div.menu-line {
+  background: #2c83ff;
+}
 .menu-container:hover .menu-top {
   transform: scaleX(1.7);
   transition: transform 0.3s;
@@ -188,6 +191,23 @@ body, html {
 }
 .menu-container .menu-bottom {
   width: 40%;
+}
+
+nav {
+  background: #0047AB;
+  width: 40%;
+  position: fixed;
+  top: 15px;
+  right: 90px;
+  z-index: 98;
+  padding: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 45px;
+  filter: drop-shadow(3px 3px 5px);
+}
+nav:hover {
+  background: #0067f8;
 }
 
 /*# sourceMappingURL=index.css.map */
