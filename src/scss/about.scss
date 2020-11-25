@@ -1,0 +1,72 @@
+.about {
+    background: lighten($cobaltBlue, 55%);
+    border: 3px dashed purple;
+    position: absolute;
+    z-index: 1;
+    padding: 32px 15px;
+    top: 0;
+    right: 0;
+    width: 67%;
+    height: 100vh;
+    overflow-y: auto;
+    color: lighten(black, 15%);
+    font-size: 4rem;
+    line-height: 2.4rem;
+
+    .about-section-container {
+        font-size: 4rem;
+        line-height: 2.4rem;
+        border: 1px dashed red;
+
+        .about-sec {
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px dashed red;
+            margin: 25px 0;
+
+            p {
+                width: 40%;
+            }
+
+            .about-pic {
+                width: 40%;
+                // height: 150px;
+                border-radius: 16px;
+            }
+
+            .abt-pic-1 {
+                
+                background: {
+                    image: url('../assets/me(1).jpeg');
+                    position: center;
+                    size: cover;
+                    repeat: no-repeat;
+                }
+            }
+
+            .abt-pic-2 {
+                
+                background: {
+                    image: url('../assets/me(1).jpeg');
+                    position: center;
+                    size: cover;
+                    repeat: no-repeat;
+                }
+            }
+
+            .abt-pic-3 {
+                
+                background: {
+                    image: url('../assets/me(1).jpeg');
+                    position: center;
+                    size: cover;
+                    repeat: no-repeat;
+                }
+            }
+        }
+
+        .about-mid {
+            flex-direction: row-reverse;
+        }
+    }
+}

@@ -1,7 +1,3 @@
-body, html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,8 +6,9 @@ body, html {
   font-family: sans-serif;
 }
 
-.app-container {
-  height: 2000px;
+.topbar {
+  position: fixed;
+  z-index: 99;
 }
 
 .sidebar-container {
@@ -151,7 +148,7 @@ body, html {
   z-index: 98;
 }
 
-.menu-container {
+.menu-nav .menu-container {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -162,40 +159,43 @@ body, html {
   align-items: center;
   justify-content: center;
 }
-.menu-container:hover div.menu-line {
+.menu-nav .menu-container:hover .nav {
+  transform: scaleX(1);
+  transition-duration: 0.3s;
+}
+.menu-nav .menu-container:hover div.menu-line {
   background: #2c83ff;
 }
-.menu-container:hover .menu-top {
+.menu-nav .menu-container:hover .menu-top {
   transform: scaleX(1.7);
   transition: transform 0.3s;
 }
-.menu-container:hover .menu-mid {
+.menu-nav .menu-container:hover .menu-mid {
   transform: scaleX(0.5);
   transition: transform 0.3s;
 }
-.menu-container:hover .menu-bottom {
+.menu-nav .menu-container:hover .menu-bottom {
   transform: scaleX(1.7);
   transition: transform 0.3s;
 }
-.menu-container div {
+.menu-nav .menu-container div {
   height: 10%;
   background: #0047AB;
   margin: 3px 0;
   transition: transform 0.3s;
 }
-.menu-container .menu-top {
+.menu-nav .menu-container .menu-top {
   width: 40%;
 }
-.menu-container .menu-mid {
+.menu-nav .menu-container .menu-mid {
   width: 80%;
 }
-.menu-container .menu-bottom {
+.menu-nav .menu-container .menu-bottom {
   width: 40%;
 }
-
-nav {
+.menu-nav .menu-container nav {
   background: #0047AB;
-  width: 40%;
+  width: 35%;
   position: fixed;
   top: 15px;
   right: 90px;
@@ -205,9 +205,82 @@ nav {
   border-bottom-left-radius: 20px;
   height: 45px;
   filter: drop-shadow(3px 3px 5px);
+  transform: scaleX(0);
+  transition-duration: 0.3s;
 }
-nav:hover {
+.menu-nav .menu-container nav:hover {
   background: #0067f8;
+}
+.menu-nav .menu-container nav ul {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu-nav .menu-container nav ul a {
+  color: rgba(245, 245, 245, 0.6);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.menu-nav .menu-container nav ul a:hover {
+  color: whitesmoke;
+}
+
+.about {
+  background: #c5ddff;
+  border: 3px dashed purple;
+  position: absolute;
+  z-index: 1;
+  padding: 32px 15px;
+  top: 0;
+  right: 0;
+  width: 67%;
+  height: 100vh;
+  overflow-y: auto;
+  color: #262626;
+  font-size: 4rem;
+  line-height: 2.4rem;
+}
+.about .about-section-container {
+  font-size: 4rem;
+  line-height: 2.4rem;
+  border: 1px dashed red;
+}
+.about .about-section-container .about-sec {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px dashed red;
+  margin: 25px 0;
+}
+.about .about-section-container .about-sec p {
+  width: 40%;
+}
+.about .about-section-container .about-sec .about-pic {
+  width: 40%;
+  border-radius: 16px;
+}
+.about .about-section-container .about-sec .abt-pic-1 {
+  background-image: url("../assets/me(1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .about-section-container .about-sec .abt-pic-2 {
+  background-image: url("../assets/me(1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .about-section-container .about-sec .abt-pic-3 {
+  background-image: url("../assets/me(1).jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .about-section-container .about-mid {
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=index.css.map */

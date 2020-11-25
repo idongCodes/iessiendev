@@ -1,8 +1,4 @@
 // Reset & General
-body, html {
-    scroll-behavior: smooth;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,9 +21,10 @@ $profileImg: '../assets/me.jpeg';
     justify-content: center;
 }
 
-// App
-.app-container {
-    height: 2000px;
+// Topbar
+.topbar {
+    position: fixed;
+    z-index: 99;
 }
 
 // Side Bar
