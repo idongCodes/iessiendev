@@ -1,0 +1,12 @@
+
+// Variables
+$cobaltBlue: #0047AB;
+$profileImg: '../assets/me.jpeg';
+
+// Mix-ins
+@mixin displayFlex() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
