@@ -2,7 +2,9 @@ import { Switch, Route } from 'react-router-dom';
 import '../css/index.css'
 import { TopBar } from './TopBar';
 import { MainContent } from './MainContent';
-import { About, Portfolio, Resume, Contact } from './pages';
+import { Portfolio, Contact } from './pages';
+import About from './About';
+import Resume from './Resume';
 
 function App() {
   return (

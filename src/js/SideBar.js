@@ -36,6 +36,11 @@ function SideBar() {
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
             </small>
+            <div className='contact-info'>
+                <a href='tel:+16179037216'>p: +1.617.903.7216</a>
+                <a href='mailto:i.d.essien@gmail.com'>e: i.d.essien@gmail.com</a>
+                Boston, MA, USA
+            </div>
         </div>
     );
 }
