@@ -316,6 +316,9 @@
     // Copyright dynamic
     $(".copyrights").html(`© ${ new Date().getFullYear() } Idong Essien.`);
 
+    // Copyright What I Do Section
+    $(".copyright").html(`${ new Date().getFullYear() }`);
+
     // Update Age
     $(".update-age").text(`${ new Date().getFullYear() - 1986 }`);
 
