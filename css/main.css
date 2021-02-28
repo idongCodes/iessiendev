@@ -1409,10 +1409,10 @@ textarea.form-control, textarea.form-control:focus {
 
 .certi-logo {
   display: table-cell;
-  width: 120px;
+  width: 150px;
   height: 100%;
   background-color: #444;
-  padding: 25px;
+  padding: 5px;
   vertical-align: middle;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
