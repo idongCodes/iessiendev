@@ -78,3 +78,4 @@ else:
             echo $encoded;
 endif;
 
+?>
